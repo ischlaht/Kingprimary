@@ -1,0 +1,220 @@
+
+
+/*# sourceMappingURL=main.sass.map */
+
+//------------------- ===== colors ===== --------------------------------------------------------------------------------------------
+
+$lightred: #ff4040
+$red: #ff0909
+$darkred: #c10000
+$ultradarkred: #6f0000
+
+$lightpink: #ff64ff
+$pink: #ff0d86
+$darkpink: #d9006c
+
+$lightgreen: #64ff64
+$green: #00fb00
+$darkgreen: #00a800
+$ultradarkgreen: #006200
+
+$ultralightgrey: #cacaca
+$lightgrey: #c0beaf
+$grey: #7c726d
+$darkgrey: #403837
+
+$lightorange: #fe9f5a
+$orange: #ff9606
+$darkorange: #bf5b00
+
+$lightyellow: #ffff48
+$yellow: #ffff00
+$darkyellow: #d7d700
+
+$gold: #FFD700
+$darkgold: #DAA520
+
+$lightbrown: #95693e
+$brown: #533b22
+$darkbrown: #3a2918
+
+$ultralightblue: #8a8aff
+$lightblue: #4848ff
+$blue: #0000e6
+$darkblue: #010196
+$ultradarkblue: #000048
+
+$lightpurple: #a800a8
+$purple: #590059
+$darkpurple: #350035
+
+//Single colors
+
+$black: #000000
+$silver: #bcbcbc
+$pale: #EEE8AA
+$white: #ffffff
+$paperwhite: #fdf5e8
+
+
+$test: red
+
+// ------------- ===== font variables ===== ------------------------------------------------------------------------------------------
+
+$fonttiny: 50%
+$fontsmall: 80%
+$font: 100%
+$fontlarge: 130%
+$fontultra: 200%
+
+
+//--------------------  ===== MIXINS =====  ------------------------------------------------------------------------------------------------
+
+=clearDefualts()
+    margin: 0px
+    padding: 0px
+
+=center()
+    margin: auto
+
+=borderRad($rad)
+    -webkit-border-radius: $rad
+    -moz-border-radius:    $rad
+    -ms-border-radius:     $rad
+    border-radius:         $rad
+
+=color($color)
+    color: $color
+
+=bgcolor($color)
+    background-color: $color
+
+=boxSize($width, $height)
+    width: $width
+    height: $height
+
+//  ---------------------- ===== Content ===== ----------------------------------------------------------------------------------------------
+
+html
+    +clearDefualts()
+body
+    +clearDefualts()
+
+
+#totalContainer
+    +clearDefualts()
+    width: 100%
+    height: 1000px
+    background-color: white
+
+#headerContainer
+    +bgcolor($color: $black)
+    width: 100%
+    height: 180px
+    display: inline-table
+
+#mainLogo
+    +boxSize($width: 60%, $height: 180px)
+
+    //---------------Menubar-----------------------------------------------
+
+#menuBar
+    +clearDefualts()
+    width: 100%
+    height: 40px
+    background-image: linear-gradient(red 20%, black 70%)
+    
+        
+//for website design
+#dropDownMenuwdContainer
+    float: right
+    position: relative
+    width: 140px
+    height: 40px
+    margin: 0px
+    padding: 0px
+    vertical-align: top
+    margin-left: 20px
+        
+//for Website design menu title
+#dropDownMenuwdContainer
+    h6
+        font-size: 90%
+        font-weight: bold
+        color: $paperwhite
+        width: 140px
+        height: 100%
+        position: relative
+        margin: 0px
+        padding: 5px
+        text-align: center
+        border-left: 2px solid darkred
+        border-right: 2px solid $darkred
+
+        &:hover
+            color: $grey
+            background-image: linear-gradient(black 20%, red 70%)
+.wdmenu
+    width: 140px
+    height: 35px
+    position: relative 
+    display: inline-grid
+    color: $paperwhite
+    background-color: $darkgrey
+    vertical-align: top
+    border-left: 2px solid $red
+    border-right: 2px solid $red
+    border-bottom: 2px solid $red
+    text-align: center
+    text-decoration: none
+
+    &:hover
+        color: $black
+        opacity: .9
+        text-decoration: none
+        
+
+#menubtn
+    font-weight: bold
+    font-size: 90%
+    color: $paperwhite
+    width: 140px
+    height: 100%
+    position: relative
+    margin: 0px
+    padding: 5px
+    text-align: center
+    border-right: 2px solid $darkred
+    display: inline-grid
+    float: right
+    text-decoration: none
+    
+    &:hover 
+        background-image: linear-gradient(black 20%, red 70%)
+        color: $grey
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+/*# sourceMappingURL=main.sass.map */
+html {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  margin: 0px;
+  padding: 0px; }
+
+#totalContainer {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 1000px;
+  background-color: white; }
+
+#headerContainer {
+  background-color: #000000;
+  width: 100%;
+  height: 180px;
+  display: inline-table; }
+
+#mainLogo {
+  width: 60%;
+  height: 180px; }
+
+#menuBar {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(red 20%, black 70%); }
+
+#dropDownMenuwdContainer {
+  float: right;
+  position: relative;
+  width: 140px;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  margin-left: 20px; }
+
+#dropDownMenuwdContainer h6 {
+  font-size: 90%;
+  font-weight: bold;
+  color: #fdf5e8;
+  width: 140px;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  border-left: 2px solid darkred;
+  border-right: 2px solid #c10000; }
+  #dropDownMenuwdContainer h6:hover {
+    color: #7c726d;
+    background-image: linear-gradient(black 20%, red 70%); }
+
+.wdmenu {
+  width: 140px;
+  height: 35px;
+  position: relative;
+  display: inline-grid;
+  color: #fdf5e8;
+  background-color: #403837;
+  vertical-align: top;
+  border-left: 2px solid #ff0909;
+  border-right: 2px solid #ff0909;
+  border-bottom: 2px solid #ff0909;
+  text-align: center;
+  text-decoration: none; }
+  .wdmenu:hover {
+    color: #000000;
+    opacity: 0.9;
+    text-decoration: none; }
+
+#menubtn {
+  font-weight: bold;
+  font-size: 90%;
+  color: #fdf5e8;
+  width: 140px;
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  border-right: 2px solid #c10000;
+  display: inline-grid;
+  float: right;
+  text-decoration: none; }
+  #menubtn:hover {
+    background-image: linear-gradient(black 20%, red 70%);
+    color: #7c726d; }
+
+/*# sourceMappingURL=main.css.map */
