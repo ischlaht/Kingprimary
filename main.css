@@ -33,14 +33,17 @@ body {
   display: inline-table;
   margin-top: 10px;
   margin-right: 10px;
-  padding: 5px;
+  padding-top: 5px;
   border-radius: 3px;
   background-color: #7c726d;
   background-image: radial-gradient(circle farthest-side at right, #000000, #2c2c2c); }
 
 #headerContactContainer h4 {
-  margin-left: 15%;
-  color: #ff9606; }
+  width: 100%;
+  padding-left: 15%;
+  color: #ff9606;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px; }
 
 #headerContactContainer b {
   color: #ffffff;
