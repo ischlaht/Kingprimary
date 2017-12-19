@@ -21,7 +21,8 @@ $ultradarkgreen: #006200
 $ultralightgrey: #cacaca
 $lightgrey: #c0beaf
 $grey: #7c726d
-$darkgrey: #403837
+$darkgrey: #313131
+$ultradarkgrey: #2c2c2c
 
 $lightorange: #fe9f5a
 $orange: #ff9606
@@ -107,6 +108,8 @@ body
     height: 1000px
     background-color: white
 
+    
+
 #headerContainer
     +bgcolor($color: $black)
     width: 100%
@@ -114,7 +117,55 @@ body
     display: inline-table
 
 #mainLogo
-    +boxSize($width: 60%, $height: 180px)
+    +boxSize($width: 45%, $height: 200px)
+    margin-left: 5%
+    
+
+    // ------------- ===== Header Contact info ===== ------------------------------
+#headerContactContainer
+    +boxSize($width: 20%, $height: 176px)
+    min-width: 330px
+    float: right
+    display: inline-table
+    margin-top: 10px
+    margin-right: 10px
+    padding: 5px
+    border-radius: 3px
+    background-color: $grey
+    background-image: radial-gradient(circle farthest-side at right, $black, $ultradarkgrey)
+    
+//Contact Title
+#headerContactContainer
+    h4
+        margin-left: 15%
+        color: $orange
+
+// email and name 
+#headerContactContainer
+    b
+        color: $white
+        font-size: 105%
+        width: 16%
+        min-width: 60px
+        // height: 100%
+        display: inline-grid
+        margin-left: 3%
+
+#headerContactContainer
+    p
+        font-size: $font
+        color: $paperwhite
+        letter-spacing: 1px
+
+        
+//Name
+#headerContactContainer
+    p:last-of-type
+        font-size: $font
+        word-spacing: inherit
+        margin-left: 18%
+        color: $white
+
 
     //---------------Menubar-----------------------------------------------
 
@@ -122,9 +173,16 @@ body
     +clearDefualts()
     width: 100%
     height: 40px
-    background-image: linear-gradient(red 20%, black 70%)
-    
-        
+    background-image: linear-gradient(red 20%, black 70%)    
+    // ----ALERT on menu bar--------==========                     !    !    !     !      !        ==  ==      ==      ===     ===
+    p
+        color: $ultralightgrey
+        font-size: 20px
+        width: 65%
+        margin-left: 4%
+        display: inline-grid
+
+
 //for website design
 #dropDownMenuwdContainer
     float: right
@@ -135,7 +193,7 @@ body
     padding: 0px
     vertical-align: top
     margin-left: 20px
-        
+
 //for Website design menu title
 #dropDownMenuwdContainer
     h6
@@ -150,6 +208,7 @@ body
         text-align: center
         border-left: 2px solid darkred
         border-right: 2px solid $darkred
+        
 
         &:hover
             color: $grey
@@ -159,20 +218,23 @@ body
     height: 35px
     position: relative 
     display: inline-grid
+    padding: 5px
     color: $paperwhite
     background-color: $darkgrey
-    vertical-align: top
     border-left: 2px solid $red
     border-right: 2px solid $red
     border-bottom: 2px solid $red
     text-align: center
     text-decoration: none
-
     &:hover
         color: $black
         opacity: .9
         text-decoration: none
-        
+    &:nth-of-type(3)
+        border-bottom-left-radius: 9px
+        border-bottom-right-radius: 9px
+
+
 
 #menubtn
     font-weight: bold

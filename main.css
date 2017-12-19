@@ -21,8 +21,45 @@ body {
   display: inline-table; }
 
 #mainLogo {
-  width: 60%;
-  height: 180px; }
+  width: 45%;
+  height: 200px;
+  margin-left: 5%; }
+
+#headerContactContainer {
+  width: 20%;
+  height: 176px;
+  min-width: 330px;
+  float: right;
+  display: inline-table;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #7c726d;
+  background-image: radial-gradient(circle farthest-side at right, #000000, #2c2c2c); }
+
+#headerContactContainer h4 {
+  margin-left: 15%;
+  color: #ff9606; }
+
+#headerContactContainer b {
+  color: #ffffff;
+  font-size: 105%;
+  width: 16%;
+  min-width: 60px;
+  display: inline-grid;
+  margin-left: 3%; }
+
+#headerContactContainer p {
+  font-size: 100%;
+  color: #fdf5e8;
+  letter-spacing: 1px; }
+
+#headerContactContainer p:last-of-type {
+  font-size: 100%;
+  word-spacing: inherit;
+  margin-left: 18%;
+  color: #ffffff; }
 
 #menuBar {
   margin: 0px;
@@ -30,6 +67,12 @@ body {
   width: 100%;
   height: 40px;
   background-image: linear-gradient(red 20%, black 70%); }
+  #menuBar p {
+    color: #cacaca;
+    font-size: 20px;
+    width: 65%;
+    margin-left: 4%;
+    display: inline-grid; }
 
 #dropDownMenuwdContainer {
   float: right;
@@ -62,9 +105,9 @@ body {
   height: 35px;
   position: relative;
   display: inline-grid;
+  padding: 5px;
   color: #fdf5e8;
-  background-color: #403837;
-  vertical-align: top;
+  background-color: #313131;
   border-left: 2px solid #ff0909;
   border-right: 2px solid #ff0909;
   border-bottom: 2px solid #ff0909;
@@ -74,6 +117,9 @@ body {
     color: #000000;
     opacity: 0.9;
     text-decoration: none; }
+  .wdmenu:nth-of-type(3) {
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px; }
 
 #menubtn {
   font-weight: bold;
