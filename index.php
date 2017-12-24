@@ -1,3 +1,5 @@
+
+
 <!Doctype html>
 <html lang="en">
 <head>
@@ -23,26 +25,32 @@
 </head>
 
 <script>
-// loading screen
-// $(document).ready( function () {
-//   var image = new Image();
-//     $('img').load( function () {
-//       console.log('loading image loaded');
-//     }).attr('src', '/images/mainlogo.jpg');
-// });
 
-
-  $(document).ready(function(){
-      $('.wdmenu').hide();
-        $('#dropDownMenuwdContainer').hover( function() {
-          $('.wdmenu').toggle(200);
-        });
-  });
 </script>
 
 
 <div id="totalContainer" style="display:inline-grid">
   <body>
+    <script src="javascriptFiles/index-controls.js"></script>
+
+    <div ng-app="login-System">
+      <form method="POST" enctype="multipart/form-data">
+      <input type="textbox" name="user-Name">
+      <input type="submit" name="reg-User">
+
+      <a href="regPage/register.php">Register</a>
+    
+    
+      </form>
+    </div>
+
+
+
+
+
+
+
+
   <!-- <img id="loader" class="loading"> -->
     <div id="headerContainer">
       <img src="images/mainlogo.jpg" id="mainLogo"/>

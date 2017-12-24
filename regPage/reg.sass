@@ -1,0 +1,524 @@
+//------------------- ===== colors ===== --------------------------------------------------------------------------------------------
+
+$lightred: #ff4040
+$red: #ff0909
+$darkred: #c10000
+$ultradarkred: #6f0000
+
+$lightpink: #ff64ff
+$pink: #ff0d86
+$darkpink: #d9006c
+
+$lightgreen: #64ff64
+$green: #00fb00
+$darkgreen: #00a800
+$ultradarkgreen: #006200
+
+$ultralightgrey: #cacaca
+$lightgrey: #c0beaf
+$grey: #7c726d
+$darkgrey: #313131
+$ultradarkgrey: #2c2c2c
+
+$lightorange: #fe9f5a
+$orange: #ff9606
+$darkorange: #bf5b00
+
+$lightyellow: #ffff48
+$yellow: #ffff00
+$darkyellow: #d7d700
+
+$gold: #FFD700
+$darkgold: #DAA520
+
+$lightbrown: #95693e
+$brown: #533b22
+$darkbrown: #3a2918
+
+$ultralightblue: #8a8aff
+$lightblue: #4848ff
+$blue: #0000e6
+$darkblue: #010196
+$ultradarkblue: #000048
+
+$lightpurple: #a800a8
+$purple: #590059
+$darkpurple: #350035
+
+//Single colors
+
+$black: #000000
+$silver: #bcbcbc
+$pale: #EEE8AA
+$white: #ffffff
+$paperwhite: #fdf5e8
+
+
+$test: red
+
+// ------------- ===== font variables ===== ------------------------------------------------------------------------------------------
+
+$fonttiny: 50%
+$fontsmall: 80%
+$font: 100%
+$fontmed: 130%
+$fontlarge: 160%
+$fontultra: 200%
+
+
+//--------------------  ===== MIXINS =====  ------------------------------------------------------------------------------------------------
+
+=clearDefualts()
+    margin: 0px
+    padding: 0px
+
+=center()
+    margin: auto
+
+=borderRad($rad)
+    -webkit-border-radius: $rad
+    -moz-border-radius:    $rad
+    -ms-border-radius:     $rad
+    border-radius:         $rad
+
+=color($color)
+    color: $color
+
+=bgcolor($color)
+    background-color: $color
+
+=boxSize($width, $height)
+    width: $width
+    height: $height
+
+//  ---------------------- ===== Content ===== ----------------------------------------------------------------------------------------------
+
+html
+    +clearDefualts()
+body
+    +clearDefualts()
+
+
+
+
+#regtotalContainer
+    +clearDefualts()
+    width: 100%
+    height: 1400px
+    background-image: url("../images/codingbackground.jpeg")
+    background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover
+    // background-color: white
+    display: inherit
+
+    
+
+#headerContainer
+    +bgcolor($color: $black)
+    +boxSize($width: 100%, $height: 130px)
+
+
+#mainLogo
+    +boxSize($width: 30%, $height: 100%)
+    margin-left: 5%
+    
+
+    // ------------- ===== Header Contact info ===== ------------------------------
+#headerContactContainer
+    +boxSize($width: 20%, $height: 90%)
+    min-width: 330px
+    float: right
+    margin-top: 5px
+    margin-right: 10px
+    padding-top: 5px
+    border-radius: 3px
+    background-color: $grey
+    background-image: radial-gradient(circle farthest-side at right, $black, $ultradarkgrey)
+    
+//Contact Title
+#headerContactContainer
+    h4
+        width: 100%
+        font-family: Papyrus, fantasy, Arial, Helvetica, sans-serif
+        padding-left: 15%
+        color: $orange
+        border-bottom: 1px solid white
+        padding-bottom: 5px
+
+// email and name 
+#headerContactContainer
+    b
+        color: $white
+        font-size: 105%
+        width: 16%
+        min-width: 60px
+        margin-left: 3%
+
+#headerContactContainer
+    p
+        font-size: $font
+        color: $paperwhite
+        letter-spacing: 1px
+        line-height: 8px
+        
+
+        
+//Name
+#headerContactContainer
+    p:last-of-type
+        font-size: $font
+        word-spacing: inherit
+        margin-left: 18%
+        color: $white
+
+
+    //---------------Menubar____________________  ______________________    ________________________________
+
+#menuBar
+    +clearDefualts()
+    +boxSize($width: 100%, $height: 35px)
+    background-image: linear-gradient(red 20%, black 70%)    
+    // ----ALERT on menu bar--------==========                     !    !    !     !      !        ==  ==      ==      ===     ===
+    p
+        color: $ultralightgrey
+        font-size: $font
+        font-family: Papyrus, fantasy, Arial, Helvetica, sans-serif
+        width: 40%
+        margin-left: 4%
+        display: inline-block
+
+
+//for website design
+#dropDownMenuwdContainer
+    float: right
+    position: relative
+    width: 140px
+    height: 40px
+    margin: 0px
+    padding: 0px
+    margin-left: 20px
+
+//for Website design menu title
+#dropDownMenuwdContainer
+    h6
+        font-size: 90%
+        font-weight: bold
+        font-family: Papyrus, fantasy, Arial, Helvetica, sans-serif
+        color: $paperwhite
+        width: 140px
+        height: 35px
+        position: relative
+        margin: 0px
+        padding: 5px
+        text-align: center
+        border-left: 2px solid $darkred
+        border-right: 2px solid $darkred
+        
+
+        &:hover
+            color: $grey
+            background-image: linear-gradient(black 20%, red 70%)
+.wdmenu
+    width: 140px
+    height: 35px
+    position: relative 
+    display: inline-block
+    padding: 5px
+    color: $paperwhite
+    background-color: $darkgrey
+    border-left: 2px solid $red
+    border-right: 2px solid $red
+    border-bottom: 2px solid $red
+    text-align: center
+    text-decoration: none
+    &:hover
+        color: $black
+        opacity: .9
+        text-decoration: none
+    &:nth-of-type(3)
+        border-bottom-left-radius: 9px
+        border-bottom-right-radius: 9px
+
+
+
+#menubtn
+    font-weight: bold
+    font-size: 90%
+    font-family: Papyrus, fantasy,Arial, Helvetica, sans-serif
+    color: $paperwhite
+    width: 140px
+    height: 100%
+    position: relative
+    margin: 0px
+    padding: 5px
+    text-align: center
+    border-right: 2px solid $darkred
+    display: inline-block
+    float: right
+    text-decoration: none
+    
+    &:hover 
+        background-image: linear-gradient(black 20%, red 70%)
+        color: $grey
+    
+
+
+// ==================================================================================================================
+// =================================================================================================================
+//====End of header========end of header ============end of header ========= end of header========Start of content=====
+
+
+
+
+
+
+
+
+//___________________________                                      \\          /v\          //
+// ________________________________                                 \\        // \\        //
+//_________________________________________                          \\      //   \\      //
+//_________________________________                                   \\    //     \\    //
+// __________________________                                          \\__//       \\__//
+// ________________________                                   ______________________________________
+
+#contentBarimg
+    +boxSize($width: 150px, $height: 60px)
+    background-color: $red
+    padding: 10px
+    position: absolute
+    left: 0px
+    margin-top: 35px
+
+
+#contentBarQuickMenu
+    +boxSize($width: 100%, $height: 60px)
+    position: absolute
+    margin-top: 35px    
+    background-color: $darkgrey
+    display: inline-grid
+    
+
+#contentBarContainer
+    +boxSize($width: 100%, $height: 300px)
+    margin-top: 35px
+    background-color: $grey
+    display: none
+    margin-top: 95px
+
+#menuBarProfile
+        +boxSize($width: 400px, $height: 100%)
+        background-color: $paperwhite
+        display: inline-grid
+        margin-left: 0
+        ul
+            +boxSize($width: 100%, $height: 40px)
+
+            background-image: linear-gradient(to bottom right, red, black)
+            border-bottom: 3px solid black
+            border-bottom: 15px solid transparent
+            border-image: linear-gradient(to bottom right, red, black)
+            border-image-slice: 1
+            padding: 0
+            h4
+                +boxSize($width: 150px, $height: 35px)
+                font-weight: bold
+                font-family: "Goudy Old Style", fantasy, Arial, Helvetica, sans-serif
+                text-align: center
+                margin: 2px auto
+                padding-top: 5px
+                margin-bottom: 10px
+                // position: relative
+                background-image: linear-gradient(to bottom right, black, $darkgrey)
+                border-radius: 5px
+               
+                color: $white
+
+
+
+
+
+
+
+
+
+
+
+
+
+//__________________________________ Signup Helo ______________________________________________________________
+//main container for reg rules
+#regRules
+    +boxSize($width: 25%, $height: auto)
+    float: left
+    margin-top: 150px
+    margin-left: 4%
+    opacity: .7
+    display: inline-grid
+    border-radius: 10px
+    background-color: $paperwhite
+    &:hover
+        opacity: 1
+
+    b
+        +boxSize($width: 100%, $height: 70px)
+        grid-column-start: 1
+        grid-column-end: 6
+        font-size: $fontultra
+        font-family: Copperplate, "Copperplate Gothic Light", fantasy, Arial
+        // font-variant: 
+        font-weight: bold
+        text-align: center
+        margin-top: 10px
+        border-bottom: 5px solid transparent
+        border-image: linear-gradient(to bottom right, red, black)
+        border-image-slice: 1
+        color: $red
+        
+    label
+        +boxSize($width: 100%, $height: 100px)
+        font-size: $fontmed
+        color: blue
+        background-color: $lightgrey
+        grid-column-start: 1
+        grid-column-end: 2
+        
+    p   
+        +boxSize($width: 100%, $height: 100px)
+        font-size: $fontsmall
+        grid-column-end: 6
+        grid-column-start: 2
+        opacity: 100%
+        height: 50px
+        padding: 5px
+        color: $black
+        
+    h5
+        grid-column-start: 1
+        grid-column-end: 6
+        padding: 5px
+        text-indent: 15px
+            
+        
+
+
+
+
+
+
+
+
+// ========================== Registration Form__________________  ________________________________________   ___
+#registerMainContainer
+    +clearDefualts()
+    +boxSize($width: 35%, $height: auto)
+    min-width: 450px
+    margin-top: 100px
+    float: left
+    margin-left: 10%
+    border-radius: 10px
+    background-color: $grey
+    padding-top: 40px
+    position: relative
+    display: grid
+    background-image: linear-gradient( $ultralightgrey 3%, $grey 20%)
+    
+
+// register title
+#registerMainContainer
+    p
+        font-size: $fontultra
+        text-align: center
+        width: 100%
+        padding-bottom: 10px
+        color: black
+        border-bottom: 5px solid black
+        
+#registerMainContainer
+    label
+        +boxSize($width: 25%, $height: 42px)
+        min-width: 50px
+        font-size: $fontmed
+        padding-left: 15px
+        text-align: left
+        color: black
+        display: inline-block
+
+.form-control
+    margin-top: 25px
+    width: 50%
+    display: inline-table
+    border: 3px solid $red
+    
+
+// submit user Button
+#reg-User
+    font-size: $fontlarge
+    font-weight: bold
+    width: 35%
+    height: 63px
+    display: block
+    margin: auto
+    margin-top: 25px
+    border-radius: 9px
+    background-color: $darkgrey
+    color: $paperwhite
+    background-image: radial-gradient($red, darkred, $lightred)
+    //  radial-gradient(circle farthest-side at right, red 40%, black 80%)
+
+    &:hover
+        color: $black
+        background-color: $brown
+        border-color: $brown
+        border-width: 6px
+        background-image: repeating-radial-gradient($red, $lightgreen, $darkred, $green)
+
+// already a member section
+#registerMainContainer
+    h5
+        color: black
+        padding: 30px
+        float: right
+        margin-right: 15%
+        display: block
+    a
+        color: $paperwhite
+        font-size: $fontmed
+        width: 50px
+        height: 20px
+        padding: 7px
+        border-radius: 5px
+        margin-left: 10px
+        background-color: $lightred
+        &:hover
+            color: $black
+            background-color: $red
+            text-decoration: none
+
+.availability
+    font-size: $fontmed
+    text-align: center
+    margin-right: 20px
+    color: $blue
+
+#ERROR
+    color: $paperwhite
+    font-size: $fontmed
+    padding-left: 40px
+    padding-right: 20px
+    word-spacing: 10px
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
