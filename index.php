@@ -22,7 +22,7 @@
   <!-- Linking css files -->
   <link href="main.css" rel="stylesheet">
 
-</head>
+</head
 
 <script>
 

@@ -67,6 +67,7 @@ $sqlEmail = $conn->query("SELECT * FROM users WHERE userName = '$userName'");
                                 VALUES('$userName', '$password', '$firstName', '$lastName', '$eMail', '$phoneNumber')");
                                         $_SESSION['userName'] = $userName;
                                         echo "Welcome $userName. You're now logged in with opportunities to explore! Please take a moment to look around and setting will be available soon!";
+                                             $_SESSION['userName'] = $userName;
                 $conn->close();
                 
         }

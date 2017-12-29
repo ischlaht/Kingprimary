@@ -1,15 +1,14 @@
 <?php require('conn.php'); ?>
 
 <?php 
-// $data = file_get_contents();
+//$Session = $_SESSION['userName'];
+//if(isset($Session)){
 $sql = $conn->query("SELECT * FROM users");
 
-// $data = array();
-// $data[] = array("userName"=>$row['userName']);
-    while($row = mysqli_fetch_assoc($sql)) {
-        // echo "From php file";
-        echo $row['userName'];
+$data = array();
+    while($row = mysqli_fetch_array($sql)) {
+        $data = $row;
     }
-    JSON_encode($row['userName']);
-
+      echo JSON_encode($data);
+//}
 ?>
