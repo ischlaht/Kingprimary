@@ -1,10 +1,19 @@
 // ContentBar
 $(document).ready( function() {
-    $('#contentBarimg').click( function () {
+    $('#contentBarimg').click( function() {
         $('#contentBarContainer').slideToggle('2000');
     });
 });
 
+$(document).ready( function() {
+    $('#dropDownClosed').hide();
+    $('#ProfileBar').click( function() {
+        $('.accountListing').slideToggle("slow", function(){
+            $('#dropDownClosed').toggle();
+            $('#dropDownOpen').toggle();
+        });
+    });
+});
 
 //username edit display
 $(document).ready( function() {
@@ -21,6 +30,8 @@ $(document).ready( function() {
             });
     });
 });
+
+
 
 
 
@@ -49,6 +60,15 @@ ProfileBar.controller('AccountInfo', function ($scope, $http) {
     });
 $('#ProfileBar').ready( function () {
     angular.bootstrap($('#ProfileBar'), ['ProfileBar']);
+});
+
+
+
+var ProfileBar = angular.module("ProfileBar", []);
+ProfileBar.controller('AccountInfo', function ($scope) {
+    $scope.tester = function(test) { alert('1');}
+    $scope.tester = function(testing) { alert('2');}
+
 });
 
 

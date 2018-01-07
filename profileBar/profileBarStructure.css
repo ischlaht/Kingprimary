@@ -8,7 +8,7 @@ body {
 
 #contentBarimg {
   width: 150px;
-  height: 60px;
+  height: 80px;
   background-color: #ff0909;
   padding: 10px;
   position: absolute;
@@ -17,35 +17,78 @@ body {
 
 #contentBarQuickMenu {
   width: 100%;
-  height: 60px;
+  height: 80px;
   position: absolute;
   margin-top: 35px;
   background-color: #313131;
-  display: inline-grid; }
+  display: inline-grid;
+  padding: 0px; }
+
+#loginContainer {
+  display: inline-block;
+  position: absolute;
+  padding-top: 10px;
+  right: 300px;
+  width: 400px;
+  height: 60px; }
+  #loginContainer h3 {
+    width: 100px;
+    display: inline-block;
+    color: #c10000; }
+  #loginContainer ul {
+    width: 300px;
+    font-size: 100%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    color: #c10000; }
+  #loginContainer input[type=text] {
+    font-size: 100%;
+    width: 200px;
+    height: 25px;
+    float: right;
+    margin: 0;
+    padding: 0; }
+
+#contentBarQuickMenu input[type=submit] {
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  right: 220px;
+  color: green;
+  top: 45px;
+  color: #c10000;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px; }
+  #contentBarQuickMenu input[type=submit]:hover {
+    color: green;
+    background-color: #c0beaf; }
 
 #contentBarContainer {
-  width: 100%;
-  height: 350px;
-  margin-top: 35px;
+  width: 25%;
+  height: 1000px;
   background-color: #2c2c2c;
   display: inherit;
-  margin-top: 95px; }
+  position: absolute;
+  margin-top: 115px;
+  right: 0; }
 
 #ProfileBar {
-  width: 450px;
-  height: 90%;
+  width: 100%;
+  height: 45px;
   margin: 0px;
   padding: 0px;
-  background-color: #c10000;
+  background-color: transparent;
   display: inline-block;
-  float: right; }
+  margin: 0px; }
   #ProfileBar ul {
     width: 100%;
     height: 45px;
     margin: 0px;
     padding: 0px;
     display: inline-block;
-    background-image: linear-gradient(to bottom right, #ff0909 30%, black);
     border-bottom: 3px solid black;
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(to bottom right, #313131, #fdf5e8);
@@ -57,7 +100,7 @@ body {
       font-weight: normal;
       font-family: "Goudy Old Style", fantasy, Arial, Helvetica, sans-serif;
       text-align: center;
-      margin: 2px auto;
+      margin: 2px 0;
       padding-top: 5px;
       margin-bottom: 10px;
       background-image: linear-gradient(to bottom right, #000000, #313131);
@@ -68,20 +111,21 @@ body {
   width: 100%;
   height: 38px;
   margin: 0px;
-  display: table;
-  background-color: #c10000;
+  display: block;
   border-bottom: 3px solid transparent;
   border-image: linear-gradient(to top right, #c10000 1%, #000000 25%);
   border-image-slice: 1; }
   .accountListing b {
     width: 143px;
-    height: 100%;
+    height: 35px;
     font-size: 100%;
     background-color: #ff4040;
     display: inline-grid;
     border-left: 7px solid black;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     float: left;
     color: #000000; }
     .accountListing b ol {
@@ -90,7 +134,7 @@ body {
       padding-left: 8px; }
   .accountListing p {
     width: auto;
-    height: 100%;
+    height: 35px;
     font-size: 80%;
     float: left;
     margin-left: 5px;
@@ -106,7 +150,10 @@ body {
   font-size: 80%;
   float: right;
   margin-right: 7px;
-  margin-top: 5px; }
+  margin-top: 5px;
+  border-radius: 4px;
+  background-color: black;
+  color: #c10000; }
 
 .profile_Edit_Text {
   margin: 0px;
@@ -125,5 +172,19 @@ body {
   position: absolute;
   right: 2px;
   display: none; }
+
+#dropDownOpen {
+  position: absolute;
+  right: 250px;
+  top: -10px;
+  font-size: 40px;
+  color: black; }
+
+#dropDownClosed {
+  position: absolute;
+  right: 250px;
+  top: -10px;
+  font-size: 40px;
+  color: black; }
 
 /*# sourceMappingURL=profileBarStructure.css.map */

@@ -1,6 +1,5 @@
 
-
-
+<?php //session_start(); ?>
 <!Doctype html>
 <html lang="en">
 <head>
@@ -13,9 +12,9 @@
 
 <script>
 
-var ProfileBar = angular.module("ProfileBar", ['ProfileBar']);
-ProfileBar.controller('AccountInfo', function ($scope, $http) {
-});
+// var ProfileBar = angular.module("ProfileBar", ['ProfileBar']);
+// ProfileBar.controller('AccountInfo', function ($scope, $http) {
+// });
 
 
 
@@ -30,6 +29,16 @@ ProfileBar.controller('AccountInfo', function ($scope, $http) {
 <!-- // _______________                              ______________________________________    -->
 
 <div id="contentBarQuickMenu">
+    <div id="loginContainer">
+        <h3>Login</h3>
+        <ul>Username :
+            <input type="text" name="loginUsername" id="loginUsername"> 
+        </ul>
+        <ul>Password :
+            <input type="text" name="loginPassword" id="loginPassword">   
+        </ul>     
+    </div>
+        <input type="submit" name="loginUser" value="Login">
 </div>
 
 <!--<div ng-app="ProfileBar" id=""></div> -->
@@ -37,9 +46,14 @@ ProfileBar.controller('AccountInfo', function ($scope, $http) {
 
 <div id="contentBarContainer">
     <div id="ProfileBar">
-        <ul> <h4>Account</h4> </ul>
-
+            <ul> <h4> Account Info 
+                <div id="dropDownOpen"> &#x27A3; </div>
+                <div id="dropDownClosed"> &#8628; </div>   
+            </h4></ul>
         <div id ="AccountInfo" ng-controller="AccountInfo"  ng-init="check()">
+        <div ng-controller="AccountInfo" ng-click="tester(test)"> Click me</div>
+        <div ng-controller="AccountInfo" ng-click="tester(testing)"> Click meeeee</div>        
+        
             <div class="accountListing">
                 <b> <ol>Account Name : </ol> </b>
                         <p>{{user_UName}}</p>

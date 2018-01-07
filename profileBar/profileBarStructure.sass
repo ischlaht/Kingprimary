@@ -117,7 +117,7 @@ body
 // ________________________                                   ______________________________________
 
 #contentBarimg
-    +boxSize($width: 150px, $height: 60px)
+    +boxSize($width: 150px, $height: 80px)
     background-color: $red
     padding: 10px
     position: absolute
@@ -126,31 +126,85 @@ body
 
 
 #contentBarQuickMenu
-    +boxSize($width: 100%, $height: 60px)
+    +boxSize($width: 100%, $height: 80px)
     position: absolute
     margin-top: 35px
     background-color: $darkgrey
     display: inline-grid
+    padding: 0px
+
+#loginContainer
+    display: inline-block
+    position: absolute
+    padding-top: 10px
+    right: 300px
+    width: 400px
+    height: 60px
+    // background-color: red
+
+    h3
+        width: 100px
+        display: inline-block
+        color: $darkred
+
+    ul
+        width: 300px
+        font-size: $font
+        float: right
+        margin: 0
+        padding: 0
+        height: 25px
+        color: $darkred
+        
+
+
+    input[type=text]  
+        font-size: $font
+        width: 200px
+        height: 25px
+        float: right
+        margin: 0
+        padding: 0
+
+//Login user button
+#contentBarQuickMenu
+    input[type=submit]  
+        +boxSize($width: 70px, $height: 30px)
+        position: absolute
+        right: 220px
+        color: green
+        top: 45
+        px
+        color: $darkred
+        background-color: $black
+        border: none
+        border-radius: 5px
+        &:hover 
+            color: green
+            background-color: $lightgrey
+
+        
+
 //-----------__________________^^^^^^^^^^^^^^^^_____________^^^^^^^^^^^^^^^^^^^^___________Display
 #contentBarContainer
-    +boxSize($width: 100%, $height: 350px)
-    margin-top: 35px
+    +boxSize($width: 25%, $height: 1000px)
     background-color: $ultradarkgrey
     display: inherit
-    margin-top: 95px
+    position: absolute
+    margin-top: 115px
+    right: 0
 
 #ProfileBar
-        +boxSize($width: 450px, $height: 90%)
+        +boxSize($width: 100%, $height: 45px)
         +clearDefualts()
-        background-color: $darkred
+        background-color: transparent 
         display: inline-block
-        float: right
+        margin: 0px
 
         ul
             +boxSize($width: 100%, $height: 45px)
             +clearDefualts()
             display: inline-block
-            background-image: linear-gradient(to bottom right, $red 30%, black)
             border-bottom: 3px solid black
             border-bottom: 5px solid transparent
             border-image: linear-gradient(to bottom right, $darkgrey, $paperwhite)
@@ -162,7 +216,7 @@ body
                 font-weight: normal
                 font-family: "Goudy Old Style", fantasy, Arial, Helvetica, sans-serif
                 text-align: center
-                margin: 2px auto
+                margin: 2px 0
                 padding-top: 5px
                 margin-bottom: 10px
                 background-image: linear-gradient(to bottom right, $black, $darkgrey)
@@ -175,14 +229,13 @@ body
 .accountListing
     +boxSize($width: 100%, $height: 38px)
     margin: 0px
-    display: table
-    background-color: $darkred
+    display: block
     border-bottom: 3px solid transparent
     border-image: linear-gradient(to top right, $darkred 1%, $black 25%)
     border-image-slice: 1
       
     b
-        +boxSize($width: 143px, $height: 100%)
+        +boxSize($width: 143px, $height: 35px)
         font-size: $font
         background-color: $lightred
         display: inline-grid
@@ -190,6 +243,8 @@ body
         border-left: 7px solid black
         border-top-left-radius: 5%
         border-bottom-left-radius: 5%
+        border-top-right-radius: 3px
+        border-bottom-right-radius: 3px        
         float: left
         color: $black
 
@@ -199,7 +254,7 @@ body
             padding-left: 8px
         
     p
-        +boxSize($width: auto, $height: 100%)
+        +boxSize($width: auto, $height: 35px)
         font-size: $fontsmall
         float: left
         margin-left: 5px
@@ -216,6 +271,9 @@ body
     float: right
     margin-right: 7px
     margin-top: 5px
+    border-radius: 4px
+    background-color: black
+    color: $darkred
 
 .profile_Edit_Text
     +clearDefualts()
@@ -230,4 +288,28 @@ body
     position: absolute
     right: 2px
     display: none
+
+#dropDownOpen
+    position: absolute
+    right: 250px
+    top: -10px
+    font-size: 40px
+    color: black
+
+#dropDownClosed
+    position: absolute
+    right: 250px
+    top: -10px
+    font-size: 40px
+    color: black
+    // display: none
+
+
+
+
+
+
+
+
+
 
