@@ -1,19 +1,19 @@
 // ContentBar
-$(document).ready( function() {
-    $('#contentBarimg').click( function() {
-        $('#contentBarContainer').slideToggle('2000');
-    });
-});
+// $(document).ready( function() {
+//     $('#contentBarimg').click( function() {
+//         $('#contentBarContainer').slideToggle('2000');
+//     });
+// });
 
-$(document).ready( function() {
-    $('#dropDownClosed').hide();
-    $('#ProfileBar').click( function() {
-        $('.accountListing').slideToggle("slow", function(){
-            $('#dropDownClosed').toggle();
-            $('#dropDownOpen').toggle();
-        });
-    });
-});
+// $(document).ready( function() {
+//     $('#dropDownClosed').hide();
+//     $('#ProfileBar').click( function() {
+//         $('.accountListing').slideToggle("slow", function(){
+//             $('#dropDownClosed').toggle();
+//             $('#dropDownOpen').toggle();
+//         });
+//     });
+// });
 
 //username edit display
 $(document).ready( function() {

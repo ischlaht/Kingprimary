@@ -12,14 +12,20 @@
 
 <script>
 
-// var ProfileBar = angular.module("ProfileBar", ['ProfileBar']);
-// ProfileBar.controller('AccountInfo', function ($scope, $http) {
-// });
+var ProfileBar = angular.module('ProfileBar', ['ngAnimate']);
 
 
 
 </script>
 
+
+<style>
+.fadein.ng-hide{
+    display: block!important;
+}
+
+
+</style>
 <body>
 <!-- ______________________;                               \\          /v\          //          -->
 <!-- // _____________________________                      \\        // \\        //           -->
@@ -28,7 +34,7 @@
 <!-- // ______________________                                \\__//       \\__//              -->
 <!-- // _______________                              ______________________________________    -->
 
-<div id="contentBarQuickMenu">
+<div id="contentBarQuickMenu" >
     <div id="loginContainer">
         <h3>Login</h3>
         <ul>Username :
@@ -42,9 +48,10 @@
 </div>
 
 <!--<div ng-app="ProfileBar" id=""></div> -->
-<img ng-controller="AccountInfo" id="contentBarimg" src="../images/menuIcon.png" ng-click="check()"/>
+<img type="button" ng-controller="AccountInfo" id="contentBarimg" src="../images/menuIcon.png" ng-click="check()" ng-show="Togggle"/>
 
-<div id="contentBarContainer">
+<div id="contentBarContainer" ng-hide="Togggle" class="ng-hide">
+
     <div id="ProfileBar">
             <ul> <h4> Account Info 
                 <div id="dropDownOpen"> &#x27A3; </div>
